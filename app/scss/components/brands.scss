@@ -1,0 +1,23 @@
+.brands {
+    padding: 60px 0;
+
+    &__item {
+        max-width: 208px;
+        height: 208px;
+        position: relative;
+        background: #ECF0F3;
+        margin: 0 16px;
+    }
+
+    &__link {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__img {
+        margin: auto;
+    }
+}

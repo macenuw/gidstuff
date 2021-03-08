@@ -1,0 +1,111 @@
+.product-card {
+    flex-direction: column;
+    max-width: 320px;
+    text-align: left;
+
+    &__inner {
+        position: relative;
+        max-width: 320px;
+        max-height: 480px;
+        margin-bottom: 16px;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: fill;
+    }
+
+    &__brand {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        padding: 9px 13px;
+        color: #000;
+        background-color: white;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 1.4px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        padding: 8px 0px;
+    }
+
+    &__price-now {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        margin-right: 16px;
+    }
+
+    &__old-price {
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #707274;
+        margin-right: 20px;
+    }
+
+    &__sale {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #EB5757;
+    }
+
+    &__color-num {
+        color: #707274;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+    }
+
+    &__colors {
+        align-items: center;
+    }
+
+    &__color {
+        width: 8px;
+        height: 8px;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        &--orange {
+            background-color: #F2994A;
+        }
+
+        &--red {
+            background: #EB5757;
+        }
+
+        &--blue {
+            background: #2F80ED;
+        }
+
+        &--yelow {
+            background: #F2C94C;
+        }
+
+        &--light-blue {
+            background: #56CCF2;
+        }
+
+        &--black {
+            background: #000000;
+        }
+    }
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIDSTUFF Главная</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <ul class="header__run d-flex">
+            <li class="header__run-item">
+                Оригинальные вещи из испании
+            </li>
+            <li class="header__run-item">
+                Доставка напрямую
+            </li>
+            <li class="header__run-item">
+                Все бренды под рукой
+            </li>
+            <li class="header__run-item">
+                мониторинг цен
+            </li>
+        </ul>
+        <nav class="header__nav container">
+            <div class="header__nav-main d-flex">
+                <ul class="content-menu d-flex">
+                    <li class="content-menu__item"><a class="content-menu__link content-menu__link--active"
+                            href="#">Женщинам</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Мужчинам</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Детям</a></li>
+                </ul>
+                <a class="logo header__logo" href="#">
+                    <img src="./images/gidstuff-logo.svg" alt="Логотип gidstuff">
+                </a>
+                <ul class="menu d-flex">
+                    <li class="menu__item">
+                        рус
+                        <svg class="down-icon">
+                            <use xlink:href="images/all-svg.svg#down"></use>
+                        </svg>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">ENG</li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        помощь
+                        <svg class="down-icon">
+                            <use xlink:href="images/all-svg.svg#down"></use>
+                        </svg>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item"><a class="menu__sub-link" href="#">О нас</a></li>
+                            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Доставка и оплата</a></li>
+                            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Гарантия и возврат</a></li>
+                            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Контакты</a></li>
+                            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Текстовая страница</a></li>
+                            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Текстовая страница</a></li>
+                            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Текстовая страница</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header__cart-wrapper">
+                    <button class="header__cart" type="button">
+                        <svg class="cart-icon">
+                            <use xlink:href="images/all-svg.svg#cart"></use>
+                        </svg>
+                    </button>
+                    <span class="header__cart-num">(2)</span>
+                </div>
+            </div>
+            <div class="header__nav-sub d-flex space-between">
+                <ul class="content-menu d-flex header__sub-menu">
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Новинки</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Одежда</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Обувь</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Аксессуары</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Сумки</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Спорт</a></li>
+                    <li class="content-menu__item"><a class="content-menu__link" href="#">Бренды</a></li>
+                </ul>
+                <label class="header__search-wrapper d-flex">
+                    <svg class="search-icon">
+                        <use xlink:href="images/all-svg.svg#search"></use>
+                    </svg>
+                    <input type="search" class="custom__input header__search" placeholder="Что вы ищете?">
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="top-slider">
+            <div class="slider container" style="background-image: url('./images/top-slider/slider-img1.jpg');">
+                <div class="slider__item">
+                    <h1 class="slider__title">
+                        GidStuff - сервис для удобной покупки брендовой одежды со всего мира
+                    </h1>
+                    <a class="slider__link" href="#">
+                        подробнее
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <h2 class="slider__title">
+                        GidStuff - сервис для удобной покупки брендовой одежды со всего мира
+                    </h2>
+                    <a class="slider__link" href="#">
+                        подробнее
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <h2 class="slider__title">
+                        GidStuff - сервис для удобной покупки брендовой одежды со всего мира
+                    </h2>
+                    <a class="slider__link" href="#">
+                        подробнее
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <h2 class="slider__title">
+                        GidStuff - сервис для удобной покупки брендовой одежды со всего мира
+                    </h2>
+                    <a class="slider__link" href="#">
+                        подробнее
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <h2 class="slider__title">
+                        GidStuff - сервис для удобной покупки брендовой одежды со всего мира
+                    </h2>
+                    <a class="slider__link" href="#">
+                        подробнее
+                    </a>
+                </div>
+            </div>
+            <ul class="brands container">
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/zara.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/bershka.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/massimo-dutti.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/next.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/stradivarius.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/mango.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/zara.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/bershka.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/massimo-dutti.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/next.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/stradivarius.png" alt="zara">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link d-flex" href="#">
+                        <img class="brands__img" src="./images/brands/mango.png" alt="zara">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="offers container">
+            <h2 class="offers__title">Сезонные предложения</h2>
+            <div class="offers__items">
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/1.jpg"
+                            alt="Трикотажные брюки джоггеры">
+                        <a class="product-card__brand" href="#">zara</a>
+                    </div>
+                    <h3 class="product-card__name">Трикотажные брюки джоггеры</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/2.jpg" alt="Классическое пальто">
+                        <a class="product-card__brand" href="#">Bershka</a>
+                    </div>
+                    <h3 class="product-card__name">Классическое пальто</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/3.jpg" alt="Куртка рубашка кожанная">
+                        <a class="product-card__brand" href="#">Massimo dutti</a>
+                    </div>
+                    <h3 class="product-card__name">Куртка рубашка кожанная</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/4.jpg"
+                            alt="Трикотажные брюки джоггеры">
+                        <a class="product-card__brand" href="#">Mango</a>
+                    </div>
+                    <h3 class="product-card__name">Трикотажные брюки джоггеры</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/3.jpg" alt="Куртка рубашка кожанная">
+                        <a class="product-card__brand" href="#">Massimo dutti</a>
+                    </div>
+                    <h3 class="product-card__name">Куртка рубашка кожанная</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/4.jpg"
+                            alt="Трикотажные брюки джоггеры">
+                        <a class="product-card__brand" href="#">Mango</a>
+                    </div>
+                    <h3 class="product-card__name">Трикотажные брюки джоггеры</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/1.jpg"
+                            alt="Трикотажные брюки джоггеры">
+                        <a class="product-card__brand" href="#">zara</a>
+                    </div>
+                    <h3 class="product-card__name">Трикотажные брюки джоггеры</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card d-flex">
+                    <div class="product-card__inner">
+                        <img class="product-card__img" src="./images/product-card/2.jpg" alt="Классическое пальто">
+                        <a class="product-card__brand" href="#">Bershka</a>
+                    </div>
+                    <h3 class="product-card__name">Классическое пальто</h3>
+                    <div class="product-card__price">
+                        <span class="product-card__price-now">3 999 &#8372</span>
+                        <span class="product-card__old-price"><strike>4500 &#8372</strike></span>
+                        <span class="product-card__sale">-10%</span>
+                    </div>
+                    <div class="product-card__color-inner d-flex space-between">
+                        <div class="product-card__color-num">
+                            <span>6 цветов</span>
+                        </div>
+                        <div class="product-card__colors d-flex">
+                            <a class="product-card__color product-card__color--orange" href="#"></a>
+                            <a class="product-card__color product-card__color--red" href="#"></a>
+                            <a class="product-card__color product-card__color--blue" href="#"></a>
+                            <a class="product-card__color product-card__color--yelow" href="#"></a>
+                            <a class="product-card__color product-card__color--light-blue" href="#"></a>
+                            <a class="product-card__color product-card__color--black" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="offers__btn" href="#">показать еще</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <a class="logo footer__logo" href="#">
+                <img src="./images/gidstuff-logo-rev.svg" alt="Логотип gidstuff">
+            </a>
+            <div class="footer__content d-flex space-between">
+                <address class="footer__contact">
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--title">
+                            контакты
+                        </li>
+                        <li class="footer__item">
+                            <a href="tel:+380674235501" class="footer__link footer__link--tel">+ 38 067 423 55 01</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="tel:+380500012115" class="footer__link footer__link--tel">+ 38 050 001 21 15</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="tel:+380739894412" class="footer__link footer__link--tel">+ 38 073 989 44 12</a>
+                        </li>
+                        <li class="footer__item footer__item--social d-flex">
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="./images/social/viber.svg" alt="social vider">
+                            </a>
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="./images/social/telegram.svg" alt="social telegram">
+                            </a>
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="./images/social/facebook.svg" alt="social facebook">
+                            </a>
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="./images/social/instagram.svg" alt="social instagram">
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            Время работы
+                            <span class="footer__item--mod">Круглосуточно без выходных</span>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="footer__list footer__list--border">
+                    <li class="footer__item footer__item--title">
+                        Категории
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Новинки</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Одежда</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Обувь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Аксессуары</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Сумки</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Спорт</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Бренды</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__list--border">
+                    <li class="footer__item footer__item--title">
+                        Информация
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Гарантия и возврат</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <form class="footer__subsribe" action="#">
+                    <label class="footer__form footer__item--title">
+                        Подписка
+                        <p class="footer__text">
+                            Чтобы быть в курсе всех акций и новинок, подпишитесь на нашу рассылку
+                        </p>
+                        <input class="footer__subsribe-input" type="email" placeholder="Ваш email">
+                    </label>
+                    <button class="footer__btn" type="submit">подписаться</button>
+                </form>
+            </div>
+            <div class="footer__down d-flex space-between">
+                <div class="footer__info d-flex">
+                    <a class="footer__info-link" href="#">Политика конфиденциальности</a>
+                    <a class="footer__info-link" href="#">Условия и положения</a>
+                </div>
+                <div class="footer__payment d-flex">
+                    <a class="footer__payment-link" href="#">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@import'global/reset';
+@import'global/vars';
+@import'global/fonts';
+@import'global/libs';
+@import'global/global';
+
+// block
+@import'block/header.scss';
+@import'block/top-slider.scss';
+@import'block/offers.scss';
+@import'block/footer.scss';
+// compnents
+@import'components/content-menu.scss';
+@import'components/menu.scss';
+@import'components/all-svg.scss';
+@import'components/custom.scss';
+@import'components/brands.scss';
+@import'components/product-card.scss';

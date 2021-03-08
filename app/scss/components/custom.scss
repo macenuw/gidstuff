@@ -1,0 +1,60 @@
+.custom-select {
+    .jq-selectbox {
+        &__select {
+            padding: 0 30px 0 10px;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            font: 13px/32px Gilroy;
+            font-weight: 600;
+            font-size: 13px;
+            max-width: 102px;
+        }
+
+        &__trigger {
+            border: none;
+            right: 5px;
+        }
+
+        &__trigger-arrow {
+            border-top-color: black;
+        }
+
+        &__dropdown {
+            padding: 24px;
+            width: 250px !important;
+            top: 25px !important;
+            bottom: auto !important;
+            background: white;
+            font-size: 15px;
+            letter-spacing: 0.4px;
+            font-weight: 500;
+
+            & li {
+                padding: 6px;
+            }
+
+            li:hover {
+                background-color: white;
+                color: black;
+            }
+
+            li.selected {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+.custom__input {
+    border: none;
+    width: 100%;
+    outline: transparent;
+
+    &::placeholder {
+        color: black;
+    }
+   
+}

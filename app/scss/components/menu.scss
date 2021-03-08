@@ -1,0 +1,52 @@
+.menu {
+    margin-right: 20%;
+
+    &__item {
+        margin-right: 25px;
+        position: relative;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        font-style: normal;
+
+        &:hover {
+            .menu__sub-list {
+                display: block;
+            }
+        }
+    }
+
+    &__sub-list {
+        background-color: white;
+        border: 1px solid #CCCFD1;
+        padding: 24px 24px 18px;
+        width: 250px;
+        position: absolute;
+        display: none;
+        z-index: 10;
+
+    }
+
+    &__sub-item {
+        text-transform: none;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        color: #292B2C;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__sub-link {
+        padding-bottom: 6px;
+        color: black;
+        transition: .3s;
+
+        &:hover {
+            border-bottom: 1px solid #000000;
+        }
+    }
+}
