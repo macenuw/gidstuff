@@ -1,5 +1,5 @@
 $(function () {
-    $('.custom-select').styler();
+    $('.custom-select, .product-show__amount-control').styler();
 
     $('.slider').slick({
         dots: true,
@@ -76,5 +76,8 @@ $(function () {
     });
     $('.footer__info').on('click', function () {
         $('.footer__info').toggleClass('footer__info--active');
+    });
+    $('.header__btn--cart, .cart__img').on('click', function () {
+        $('.cart').toggleClass('cart--active');
     });
 });
