@@ -27,7 +27,7 @@
     &__logo {
         display: block;
         margin-left: auto;
-        margin-right: 101px;
+        flex-grow: 0.1;
     }
 
     &__cart {

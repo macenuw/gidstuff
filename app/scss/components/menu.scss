@@ -1,5 +1,5 @@
 .menu {
-    margin-right: 20%;
+    margin-right: auto;
 
     &__item {
         margin-right: 25px;
@@ -9,6 +9,7 @@
         letter-spacing: 1.4px;
         text-transform: uppercase;
         font-style: normal;
+        align-items: center;
 
         &:hover {
             .menu__sub-list {

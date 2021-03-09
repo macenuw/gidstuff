@@ -11,6 +11,11 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 
+    &--box {
+        max-width: 1328px;
+        padding: 0;
+    }
+
 }
 
 .d-flex {

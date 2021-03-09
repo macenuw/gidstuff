@@ -11,7 +11,7 @@
     }
 
     &__img {
-        height: 100%;
+        height: auto;
         object-fit: fill;
     }
 
@@ -27,6 +27,13 @@
         letter-spacing: 1.4px;
         text-align: center;
         text-transform: uppercase;
+
+        @media(max-width: 575px) {
+            top: 4px;
+            left: 4px;
+            font-size: 8px;
+            padding: 5px 7px;
+        }
     }
 
     &__name {
@@ -34,6 +41,10 @@
         font-size: 12px;
         letter-spacing: 1.4px;
         text-transform: uppercase;
+
+        @media(max-width: 575px) {
+            font-size: 9px;
+        }
     }
 
     &__price {
@@ -46,6 +57,12 @@
         letter-spacing: 1.3px;
         text-transform: uppercase;
         margin-right: 16px;
+
+        @media(max-width: 575px) {
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-right: 8px;
+        }
     }
 
     &__old-price {
@@ -55,6 +72,12 @@
         text-transform: uppercase;
         color: #707274;
         margin-right: 20px;
+
+        @media(max-width: 575px) {
+            font-size: 10px;
+            letter-spacing: 5%;
+            margin-right: 10px;
+        }
     }
 
     &__sale {
@@ -63,6 +86,11 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #EB5757;
+
+        @media(max-width: 575px) {
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
     }
 
     &__color-num {
@@ -74,6 +102,10 @@
 
     &__colors {
         align-items: center;
+
+        @media(max-width: 575px) {
+            display: none;
+        }
     }
 
     &__color {

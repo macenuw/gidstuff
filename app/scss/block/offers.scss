@@ -1,6 +1,7 @@
 .offers {
     text-align: center;
     margin-bottom: 30px;
+
     &__title {
         text-align: left;
         font-weight: 600;
@@ -15,7 +16,16 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 59px 16px;
+
+        @media(max-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media(max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
+
+
 
     &__btn {
         text-align: center;
