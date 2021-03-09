@@ -22,22 +22,34 @@
         }
 
         &__dropdown {
-            padding: 24px;
-            width: 250px !important;
+            width: 100px !important;
             top: 25px !important;
             bottom: auto !important;
             background: white;
             font-size: 15px;
             letter-spacing: 0.4px;
             font-weight: 500;
+            border-radius: 8px;
 
-            & li {
-                padding: 6px;
+            li {
+                text-transform: none;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.4px;
+                color: #292B2C;
+                padding: 6px 0;
+                text-align: center;
+                border: 1px solid transparent;
+
+                &.selected {
+                    border-bottom: 1px solid black;
+                }
             }
 
             li:hover {
                 background-color: white;
                 color: black;
+                border-bottom: 1px solid black;
             }
 
             li.selected {
@@ -56,5 +68,5 @@
     &::placeholder {
         color: black;
     }
-   
+
 }

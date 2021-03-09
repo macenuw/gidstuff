@@ -9,6 +9,11 @@
         line-height: 1.2;
         letter-spacing: 3.8px;
         text-transform: uppercase;
+
+        @media(max-width: 575px) {
+            font-size: 18px;
+            letter-spacing: 2.8px;
+        }
     }
 
     &__items {
@@ -20,6 +25,7 @@
         @media(max-width: 1200px) {
             grid-template-columns: repeat(3, 1fr);
         }
+
         @media(max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -33,5 +39,16 @@
         color: white;
         background-color: black;
         padding: 19px 3%;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 130%;
+
+        @media(max-width: 768px) {
+            padding: 19px 10%;
+        }
+
+        @media(max-width: 575px) {
+            padding: 19px 20%;
+        }
     }
 }

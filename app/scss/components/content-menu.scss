@@ -1,7 +1,36 @@
 .content-menu {
-    @media(max-width: 768px) {
-        display: none;
 
+    @media(max-width: 768px) {
+        position: absolute;
+        top: -500px;
+
+    }
+
+    &--sub {
+        .content-menu__item{
+            margin: 10px 0;
+        }
+    }
+
+    &--active {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: white;
+        z-index: 10;
+        width: 100%;
+        justify-content: center;
+        padding: 12px 0;
+
+        &.content-menu--sub {
+            top: 120px;
+            left: 0;
+            background-color: white;
+            z-index: 10;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {

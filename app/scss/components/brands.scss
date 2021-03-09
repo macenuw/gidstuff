@@ -17,11 +17,11 @@
 
         @media(max-width: 798px) {
             max-width: 178px;
-            max-height: auto;
+            max-height: 178px;
         }
         @media(max-width: 575px) {
-            max-width: 100px;
-            max-height: 100px;
+            min-width: 100px;
+            height: 100px;
         }
     }
 
@@ -35,6 +35,6 @@
         margin: auto;
     }
     .slick-slide div{
-        margin: 8px;
+        margin: 0 8px;
     }
 }

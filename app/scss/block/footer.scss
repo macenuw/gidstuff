@@ -8,23 +8,73 @@
 
     &__content {
         padding-top: 60px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px 30px;
+
+        @media(max-width: 992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media(max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width: 575px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__contact {
         font-style: normal;
         position: relative;
-        padding-right: 60px;
+        padding-right: 20px;
         border-right: 1px solid rgba(255, 255, 255, 0.2);
+        margin-right: auto;
+
+        @media(max-width: 575px) {
+            border: none;
+        }
+    }
+
+    &__category,
+    &__info {
+        @media(max-width: 575px) {
+            background-image: url('/images/footer/down.svg');
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
 
     }
 
-    &__category {
+    &__category--active {
+        @media(max-width: 575px) {
+            background-image: url('/images/footer/up.svg');
+        }
+
+
+        .footer__list-category {
+            display: block;
+        }
+    }
+
+    &__info--active {
+        @media(max-width: 575px) {
+            background-image: url('/images/footer/up.svg');
+        }
+
+        .footer__list-info {
+            display: block;
+        }
+    }
+
+    &__list-category,
+    &__list-info {
         padding-top: 16px;
-    }
 
-    &__list {
-        padding-right: 30px;
+        @media(max-width: 575px) {
+            display: none;
+        }
     }
 
     &__item {
@@ -141,18 +191,35 @@
     &__down {
         padding: 41px 0;
         align-items: center;
+
+        @media(max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
-    &__info-link {
+    &__privat {
+        @media(max-width: 575px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__privat-link {
         color: white;
         font-style: normal;
         font-weight: 500;
         font-size: 15px;
         line-height: 18px;
         letter-spacing: 0.4px;
+        margin: 5px 0;
 
         &:not(:last-child) {
             margin-right: 40px;
         }
+
+    }
+
+    &__payment {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
