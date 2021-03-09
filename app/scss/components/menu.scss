@@ -1,6 +1,11 @@
 .menu {
     margin-right: auto;
 
+    @media(max-width: 768px) {
+        display: none;
+
+    }
+
     &__item {
         margin-right: 25px;
         position: relative;

@@ -26,11 +26,25 @@
         </ul>
         <nav class="header__nav container">
             <div class="header__nav-main d-flex">
+                <button class="header__menu-btn">
+                    <span class="header__menu-span">menu toggle</span>
+                </button>
                 <ul class="content-menu d-flex">
-                    <li class="content-menu__item"><a class="content-menu__link content-menu__link--active"
-                            href="#">Женщинам</a></li>
-                    <li class="content-menu__item"><a class="content-menu__link" href="#">Мужчинам</a></li>
-                    <li class="content-menu__item"><a class="content-menu__link" href="#">Детям</a></li>
+                    <li class="content-menu__item">
+                        <a class="content-menu__link content-menu__link--active" href="#">
+                            Женщинам
+                        </a>
+                    </li>
+                    <li class="content-menu__item">
+                        <a class="content-menu__link" href="#">
+                            Мужчинам
+                        </a>
+                    </li>
+                    <li class="content-menu__item">
+                        <a class="content-menu__link" href="#">
+                            Детям
+                        </a>
+                    </li>
                 </ul>
                 <a class="logo header__logo" href="#">
                     <img src="./images/gidstuff-logo.svg" alt="Логотип gidstuff">
@@ -61,8 +75,13 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="header__cart-wrapper">
-                    <button class="header__cart" type="button">
+                <div class="header__cart-wrapper d-flex">
+                    <button class="header__btn header__btn--search" type="button">
+                        <svg class="search-icon-big">
+                            <use xlink:href="images/all-svg.svg#search"></use>
+                        </svg>
+                    </button>
+                    <button class="header__btn" type="button">
                         <svg class="cart-icon">
                             <use xlink:href="images/all-svg.svg#cart"></use>
                         </svg>

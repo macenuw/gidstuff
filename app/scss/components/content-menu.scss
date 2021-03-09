@@ -1,4 +1,9 @@
 .content-menu {
+    @media(max-width: 768px) {
+        display: none;
+
+    }
+
     &__item {
         &:not(:last-child) {
             margin-right: 27px;
@@ -24,4 +29,4 @@
         }
     }
 
-} 
+}

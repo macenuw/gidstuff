@@ -33,4 +33,10 @@ $(function () {
             }
         ]
     });
+
+    
+    var menuBtn = document.querySelector('.header__menu-btn');
+    menuBtn.addEventListener('click', function () {
+        this.classList.contains("is-active") === true ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
 });

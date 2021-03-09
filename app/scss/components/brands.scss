@@ -3,10 +3,9 @@
 
     &__item {
         max-width: 208px;
-        width: 208px;
+        width: 100%;
         height: 208px;
         background: #ECF0F3;
-        margin: 0 16px 0 0 ;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,8 +16,8 @@
         }
 
         @media(max-width: 798px) {
-            max-width: 158px;
-            max-height: 158px;
+            max-width: 178px;
+            max-height: auto;
         }
         @media(max-width: 575px) {
             max-width: 100px;
@@ -34,5 +33,8 @@
 
     &__img {
         margin: auto;
+    }
+    .slick-slide div{
+        margin: 8px;
     }
 }
