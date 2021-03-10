@@ -10,6 +10,18 @@
         text-transform: uppercase;
         color: #000000;
         margin-bottom: 36px;
+
+        @media(max-width: 768px) {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 2.8px;
+           
+        }
+    }
+
+    .slick-slide {
+        margin: 0 10px;
     }
 
     .slick-arrow {
