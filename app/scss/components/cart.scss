@@ -1,24 +1,32 @@
 .cart {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 0px;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-    right: -2000px;
+    right: 0px;
     transition: .5s;
 
     &--active {
+        width: 100%;
         right: 0;
+
+        .cart__inner {
+            display: flex;
+        }
     }
 
     &__inner {
         background-color: white;
         height: 100vh;
-        width: 440px;
+        max-width: 440px;
+        min-width: 320px;
+        width: 100%;
         margin-left: auto;
         padding: 28px;
         flex-direction: column;
+        display: none;
     }
 
     &__top {
@@ -38,6 +46,7 @@
         letter-spacing: 2.4px;
         text-transform: uppercase;
         color: #1E1F20;
+
     }
 
     &__content {

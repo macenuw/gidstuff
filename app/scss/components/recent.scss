@@ -1,0 +1,51 @@
+.recent {
+    padding-top: 7px;
+    margin-bottom: 160px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: 3.8px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 36px;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        height: 48px;
+        width: 48px;
+        font-size: 0;
+        top: -65px;
+        border: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        outline: transparent;
+        transition: .3s;
+    }
+
+    .slick-prev {
+        right: 70px;
+        background-image: url('../images/top-slider/left.svg');
+        background-position: 50% 50%;
+
+        &:hover {
+            background-color: black;
+            background-image: url('../images/top-slider/left-white.svg');
+            background-position: 30% 50%;
+        }
+    }
+
+    .slick-next {
+        right: 11px;
+        background-image: url('../images/top-slider/right.svg');
+        background-position: 50% 50%;
+
+        &:hover {
+            background-color: black;
+            background-image: url('../images/top-slider/right-white.svg');
+            background-position: 70% 50%;
+        }
+    }
+}
