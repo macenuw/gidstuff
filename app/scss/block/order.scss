@@ -145,13 +145,13 @@
 
     &__form-tel {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     &__form-name {
         margin-right: 16px;
         width: 47.6%;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
 
         @media(max-width: 768px) {
             width: 100%;
@@ -161,7 +161,7 @@
 
     &__form-surname {
         width: 47.6%;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
 
         @media(max-width: 768px) {
             width: 100%;
@@ -237,6 +237,7 @@
 
         @media(max-width: 575px) {
             padding-top: 10px;
+            margin-bottom: 30px;
         }
     }
 
@@ -500,6 +501,7 @@
         letter-spacing: 1.4px;
         text-transform: uppercase;
         margin-right: 40px;
+        border: none;
 
         @media(max-width: 575px) {
             margin-right: 0;
