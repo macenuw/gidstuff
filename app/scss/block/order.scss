@@ -183,6 +183,12 @@
         border-bottom: 1px solid#CCCFD1;
         align-items: flex-end;
         margin-bottom: 20px;
+
+        @media(max-width: 575px) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 
     &__info-num {
@@ -193,6 +199,9 @@
         color: #1E1F20;
         flex-grow: 0.02;
 
+        @media(max-width: 575px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__info-delivery {
@@ -216,11 +225,19 @@
         text-align: right;
         letter-spacing: 0.4px;
         color: #1E1F20;
+
+        @media(max-width: 575px) {
+            margin-left: 0;
+        }
     }
 
     &__city {
         max-width: 474px;
         margin-bottom: 60px;
+
+        @media(max-width: 575px) {
+            padding-top: 10px;
+        }
     }
 
     &__city-select {
@@ -249,6 +266,10 @@
         color: #707274;
         border-bottom: 1px dashed #707274;
         margin-right: 20px;
+
+        @media(max-width: 575px) {
+            display: none;
+        }
     }
 
     &__delivery {
@@ -276,6 +297,13 @@
         }
     }
 
+    &__label--mod {
+        @media(max-width: 575px) {
+            flex-wrap: wrap;
+        }
+
+    }
+
     &__method-name {
         font-weight: 600;
         font-size: 16px;
@@ -283,6 +311,10 @@
         letter-spacing: 0.4px;
         color: #000000;
         width: 200px;
+
+        @media(max-width: 575px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__delivery-date {
@@ -294,6 +326,13 @@
         color: #000000;
         flex-grow: 0.7;
         margin-right: auto;
+
+        @media(max-width: 575px) {
+            flex-grow: 0;
+            margin-right: 0;
+            text-align: left;
+            width: 50%;
+        }
     }
 
     &__delivery-cost {
@@ -304,6 +343,10 @@
         letter-spacing: 0.4px;
         color: #000000;
         width: 80px;
+
+        @media(max-width: 575px) {
+           margin-left: auto;
+        }
     }
 
     &__new-post-inner {
