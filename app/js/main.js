@@ -1,5 +1,5 @@
 $(function () {
-    $('.custom-select, .product-show__amount-control').styler();
+    $('.custom-select, .product-show__amount-control, .order-card__amount, .order__input').styler();
 
     $('.slider').slick({
         dots: true,
@@ -151,4 +151,7 @@ $(function () {
     $('.product__feature .product__title-inner').on('click', function () {
         $('.product__feature').toggleClass('product__feature--active');
     });
+    // $('.order__delivery-new-post label').on('click', function () {
+    //     $('.order__delivery-new-post').toggleClass('order__delivery-new-post--active');
+    // });
 });

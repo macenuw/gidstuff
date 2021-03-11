@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIDSTUFF Главная</title>
+    <title>GIDSTUFF Оформление заказа</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -21,125 +21,259 @@
     </header>
     <main>
         <section class="order">
-            
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__inner container">
-            <a class="logo footer__logo" href="#">
-                <img src="./images/gidstuff-logo-rev.svg" alt="Логотип gidstuff">
-            </a>
-            <div class="footer__content">
-                <address class="footer__contact">
-                    <ul class="footer__list">
-                        <li class="footer__item footer__item--title">
-                            контакты
-                        </li>
-                        <li class="footer__item">
-                            <a href="tel:+380674235501" class="footer__link footer__link--tel">+ 38 067 423 55 01</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="tel:+380500012115" class="footer__link footer__link--tel">+ 38 050 001 21 15</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="tel:+380739894412" class="footer__link footer__link--tel">+ 38 073 989 44 12</a>
-                        </li>
-                        <li class="footer__item footer__item--social d-flex">
-                            <a class="footer__link" href="#">
-                                <img class="footer__img" src="./images/social/viber.svg" alt="social vider">
-                            </a>
-                            <a class="footer__link" href="#">
-                                <img class="footer__img" src="./images/social/telegram.svg" alt="social telegram">
-                            </a>
-                            <a class="footer__link" href="#">
-                                <img class="footer__img" src="./images/social/facebook.svg" alt="social facebook">
-                            </a>
-                            <a class="footer__link" href="#">
-                                <img class="footer__img" src="./images/social/instagram.svg" alt="social instagram">
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            Время работы
-                            <span class="footer__item--mod">Круглосуточно без выходных</span>
-                        </li>
+            <div class="container">
+                <h2 class="order__title">Оформление заказа</h2>
+                <div class="order__fixed">
+                    <ul class="order__list">
+                        <li class="order__list-title">Итого</li>
+                        <li class="order__item d-flex space-between">2 товара на сумму: <span class="order__product-total">2 100 ₴</span></li>
+                        <li class="order__item d-flex space-between">Стоимость доставки: <span class="order__delivery-total">2 100 ₴</span></li>
+                        <li class="order__item d-flex space-between">К оплате: <span class="order__cost-total">2 200 ₴</span></li>
                     </ul>
-                </address>
-                <div class="footer__category">
-                    <p class="footer__item--title">Категории</p>
-                    <ul class="footer__list footer__list-category">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Новинки</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Одежда</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Обувь</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Аксессуары</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Сумки</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Спорт</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Бренды</a>
-                        </li>
-                    </ul>
+                    <a href="#" class="order__fixed-link">Оформить заказ</a>
+                    <p class="order__text">Подтверждая заказ, я принимаю условия <a href="#" class="order__text-link">пользовательского соглашения</a></p>
                 </div>
-                <div class="footer__info">
-                    <p class="footer__item--title">Информация</p>
-                    <ul class="footer__list footer__list-info">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">О нас</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Доставка и оплата</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Гарантия и возврат</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                <form class="footer__subsribe" action="#">
-                    <label class="footer__form footer__item--title">
-                        Подписка
-                        <p class="footer__text">
-                            Чтобы быть в курсе всех акций и новинок, подпишитесь на нашу рассылку
+                <form action="#" class="order__form">
+                    <div class="order__your-contact">
+                        <p class="order__form-title">Ваши контактные данные</p>
+                        <label for="my-tel" class="order__form-label">
+                            <span class="input__title">Контактный телефон</span>
+                            <input type="tel" class="order__form-tel input" id="my-tel" required
+                                placeholder="+ 38 0(__)___ __ __">
+                        </label>
+                        <label for="my-name" class="order__form-label">
+                            <input type="text" class="order__form-name input" id="my-name" required placeholder="Имя">
+                        </label>
+                        <label for="my-surname" class="order__form-label">
+                            <input type="text" class="order__form-surname input" id="my-surname" required
+                                placeholder="Фамилия">
+                        </label>
+                        <label for="my-email" class="order__form-label">
+                            <span class="input__title">Email</span>
+                            <input type="email" class="order__form-email input" id="my-email" required
+                                placeholder="Email">
+                        </label>
+                    </div>
+                    <div class="order__delivery-payment">
+                        <p class="order__form-title">Выбор доставки и оплаты</p>
+                        <div class="order__info d-flex">
+                            <span class="order__info-num">Заказ №1</span>
+                            <span class="order__info-delivery">7-10 дней</span>
+                            <span class="order__info-total">на сумму: <span class="order__info-total-price">4 199
+                                    &#8372;</span> </span>
+                        </div>
+                        <div class="order-card d-flex">
+                            <span class="order-card__delete"></span>
+                            <div class="order-card__wrapper">
+                                <img class="order-card__img" src="./images/product/image1.jpg" alt="">
+                            </div>
+                            <div class="order-card__info">
+                                <span class="order-card__brand">Zara</span>
+                                <span class="order-card__name">Трикотажные брюки джоггеры</span>
+                                <div class="order-card__size-color d-flex">
+                                    <span class="order-card__size">
+                                        Размер:
+                                        <span class="order-card__size-name">
+                                            L
+                                        </span>
+                                    </span>
+                                    <span class="order-card__color">
+                                        Цвет:
+                                        <span class="order-card__color-name">
+                                            Фиолетовый
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="order-card__number">
+                                <input class="order-card__amount" type="number" value="1">
+                            </div>
+                            <div class="order-card__price">
+                                <span class="order-card__price-now">3 999 &#8372;</span>
+                                <span class="order-card__old-price">4500 &#8372;</span>
+                                <span class="order-card__sale">-10%</span>
+                            </div>
+                        </div>
+                        <div class="order-card d-flex">
+                            <span class="order-card__delete"></span>
+                            <div class="order-card__wrapper">
+                                <img class="order-card__img" src="./images/product/image1.jpg" alt="">
+                            </div>
+                            <div class="order-card__info">
+                                <span class="order-card__brand">Zara</span>
+                                <span class="order-card__name">Трикотажные брюки джоггеры</span>
+                                <div class="order-card__size-color d-flex">
+                                    <span class="order-card__size">
+                                        Размер:
+                                        <span class="order-card__size-name">
+                                            L
+                                        </span>
+                                    </span>
+                                    <span class="order-card__color">
+                                        Цвет:
+                                        <span class="order-card__color-name">
+                                            Фиолетовый
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="order-card__number">
+                                <input class="order-card__amount" type="number" value="1">
+                            </div>
+                            <div class="order-card__price">
+                                <span class="order-card__price-now">3 999 &#8372;</span>
+                                <span class="order-card__old-price">4500 &#8372;</span>
+                                <span class="order-card__sale">-10%</span>
+                            </div>
+                        </div>
+                        <div class="order__city">
+                            <label for="my-city">
+                                <span class="input__title">Выберите город доставки</span>
+                                <select name="city" id="my-city" class="order__city-select custom-select">
+                                    <option value="Выберите город">Выберите город</option>
+                                    <option value="Харьков">Харьков</option>
+                                    <option value="Киев">Киев</option>
+                                    <option value="Днепр">Днепр</option>
+                                    <option value="Львов">Львов</option>
+                                    <option value="Одесса">Одесса</option>
+                                    <option value="Запорожье">Запорожье</option>
+                                </select>
+                                <span class="order__city-choice">Харьков</span>
+                                <span class="order__city-choice">Киев</span>
+                                <span class="order__city-choice">Днепр</span>
+                                <span class="order__city-choice">Львов</span>
+                                <span class="order__city-choice">Одесса</span>
+                                <span class="order__city-choice">Запорожье</span>
+                            </label>
+                        </div>
+                        <div class="order__delivery">
+                            <span class="order__delivery-title">Способ доставки</span>
+                            <div class="order__delivery-new-post">
+                                <label for="new-post" class="d-flex">
+                                    <input type="radio" id="new-post" class="order__input" name="delivery-metod">
+                                    <span class="order__method-name">Отделение, Новая Почта </span>
+                                    <span class="order__delivery-date">07.12.2020</span>
+                                    <span class="order__delivery-cost">Бесплатно</span>
+                                </label>
+                                <div class="order__new-post-inner">
+                                    <span class="input__title">Отделение</span>
+                                    <select name="new-post" class="order__select custom-select">
+                                        <option value="121">Отделение №1 ул. Зерновая 123</option>
+                                        <option value="121">Отделение №1 ул. Зерновая 123</option>
+                                        <option value="121">Отделение №1 ул. Зерновая 123</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="order__delivery-courier">
+                                <label for="new-post-courier" class="d-flex">
+                                    <input type="radio" id="new-post-courier" class="order__input"
+                                        name="delivery-metod">
+                                    <span class="order__method-name">Курьер, Новая Почта</span>
+                                    <span class="order__delivery-date">07.12.2020</span>
+                                    <span class="order__delivery-cost">100 &#8372;</span>
+                                </label>
+                                <div class="order__new-post-courier-inner d-flex">
+                                    <label class="order__courier-street" for="courier-street">
+                                        <span class="input__title">Улица</span>
+                                        <input type="text" class="order__courier-street input" name="street"
+                                            id="courier-street" placeholder="Улица"></label>
+                                    <label class="order__courier-home" for="courier-home">
+                                        <span class="input__title">№ дома</span>
+                                        <input type="text" class="order__courier-home input" name="home-num"
+                                            id="courier-home" placeholder="№ дома"></label>
+                                    <label class="order__courier-room" for="courier-room">
+                                        <span class="input__title">Квартира</span>
+                                        <input type="text" class="order__courier-room input" name="room-num"
+                                            id="courier-room" placeholder="Квартира"></label>
+                                </div>
+                            </div>
+                            <div class="order__delivery-ukr-post">
+                                <label for="ukr-post" class="d-flex">
+                                    <input type="radio" id="ukr-post" class="order__input" name="delivery-metod">
+                                    <span class="order__method-name">Отделение, Новая Почта </span>
+                                    <span class="order__delivery-date">07.12.2020</span>
+                                    <span class="order__delivery-cost">100 &#8372;</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__payment">
+                            <span class="order__payment-title">Оплата</span>
+                            <label for="cash" class="order__cash">
+                                <input type="radio" id="cash" class="order__input" name="payment-method">
+                                <span class="order__method-name">Наличные при получении</span>
+                            </label>
+                            <label for="card" class="order__card">
+                                <input type="radio" id="card" class="order__input" name="payment-method">
+                                <span class="order__method-name">Картой на сайте</span>
+                            </label>
+                        </div>
+                        <div class="order__get">
+                            <span class="order__get-title">Получатель</span>
+                            <label for="me-get" class="order__me-get">
+                                <input type="radio" id="me-get" class="order__input" name="get">
+                                <span class="order__method-name">Я</span>
+                            </label>
+                            <label for="someone-get" class="order__someone-get">
+                                <input type="radio" id="someone-get" class="order__input" name="get">
+                                <span class="order__method-name">Другой получатель</span>
+                            </label>
+                            <div class="order__your-contact">
+                                <label for="someone-tel" class="order__form-label">
+                                    <span class="input__title">Контактный телефон</span>
+                                    <input type="tel" class="order__form-tel input" id="someone-tel" required
+                                        placeholder="+ 38 0(__)___ __ __">
+                                </label>
+                                <label for="someone-name" class="order__form-label">
+                                    <input type="text" class="order__form-name input" id="someone-name" required
+                                        placeholder="Имя">
+                                </label>
+                                <label for="someone-surname" class="order__form-label">
+                                    <input type="text" class="order__form-surname input" id="someone-surname" required
+                                        placeholder="Фамилия">
+                                </label>
+                                <label for="someone-email" class="order__form-label">
+                                    <span class="input__title">Email</span>
+                                    <input type="email" class="order__form-email input" id="someone-email" required
+                                        placeholder="Email">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__no-call">
+                            <label for="no-call" class="order__no-call-inner">
+                                <input class="order__input" name="no-call" id="no-call" type="checkbox">
+                                <span class="order__method-name">Не перезванивать мне</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order__comments">
+                        <span class="order__comments-title">Оставить комментарий</span>
+                    </div>
+                    <div class="order__attention d-flex">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.3756 21H2.62451C2.40127 21 2.19512 20.8775 2.08343 20.6783C1.97219 20.4789 1.97219 20.2338 2.08343 20.0346L11.4591 3.29899C11.6822 2.90034 12.3178 2.90034 12.5409 3.29899L21.9166 20.0346C22.0278 20.2338 22.0278 20.4789 21.9166 20.6783C21.805 20.8775 21.5987 21 21.3756 21ZM3.70621 19.7127H20.2938L12 4.9082L3.70621 19.7127Z"
+                                fill="black" />
+                            <path
+                                d="M12.2077 18.4499C12.0355 18.4499 11.8762 18.3857 11.755 18.265C11.6337 18.1436 11.5701 17.9841 11.5701 17.8123C11.5701 17.6466 11.6402 17.4804 11.755 17.3595C11.8186 17.3024 11.889 17.2575 11.9651 17.2257C12.2011 17.1235 12.4817 17.1809 12.6603 17.3595C12.775 17.4804 12.8452 17.6466 12.8452 17.8123C12.8452 17.9841 12.7815 18.1435 12.6603 18.265C12.5393 18.3857 12.3798 18.4499 12.2077 18.4499Z"
+                                fill="black" />
+                            <path
+                                d="M12.2077 15.8996C11.8556 15.8996 11.5701 15.6144 11.5701 15.262V8.24883C11.5701 7.8965 11.8556 7.6113 12.2077 7.6113C12.5598 7.6113 12.8452 7.8965 12.8452 8.24883V15.262C12.8452 15.6144 12.5598 15.8996 12.2077 15.8996Z"
+                                fill="black" />
+                        </svg>
+                        <p class="order__attention-text">
+                            После завершении заказа вы перейдете на сервис оплаты
                         </p>
-                        <input class="footer__subsribe-input" type="email" placeholder="Ваш email">
-                    </label>
-                    <button class="footer__btn" type="submit">подписаться</button>
+                    </div>
+                    <div class="order__btn-wrapper d-flex">
+                        <button class="order__btn">Оформить заказ</button>
+                        <div class="order__total">
+                            К оплате: <span class="order__total-price">2 200 ₴</span>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="footer__down d-flex space-between">
-                <div class="footer__privat d-flex">
-                    <a class="footer__privat-link" href="#">Политика конфиденциальности</a>
-                    <a class="footer__privat-link" href="#">Условия и положения</a>
-                </div>
-                <div class="footer__payment d-flex">
-                    <a class="footer__payment-link" href="#">
-                        <img src="./images/footer/mastercard.png" alt="master-carg логотип">
-                    </a>
-                    <a class="footer__payment-link" href="#">
-                        <img src="./images/footer/visa.png" alt="visa логотип">
-                    </a>
-                    <a class="footer__payment-link" href="#">
-                        <img src="./images/footer/liqpay.png" alt="liqpay логотип">
-                    </a>
-                    <a class="footer__payment-link" href="#">
-                        <img src="./images/footer/new-post.png" alt="новая почта логотип">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </section>
+    </main>
     <script src="js/main.min.js"></script>
 </body>
 
