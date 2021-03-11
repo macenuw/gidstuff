@@ -345,7 +345,7 @@
         width: 80px;
 
         @media(max-width: 575px) {
-           margin-left: auto;
+            margin-left: auto;
         }
     }
 
@@ -427,6 +427,18 @@
 
     &__no-call {
         margin-bottom: 30px;
+
+        .jq-checkbox.checked .jq-checkbox__div {
+            width: 14px;
+            height: 14px;
+            margin: 0;
+            border: none;
+            background-color: black;
+            transform: none;
+            background-image: url('../images/check.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     &__comments {
