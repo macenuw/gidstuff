@@ -97,12 +97,15 @@
                     <li class="content-menu__item"><a class="content-menu__link" href="#">Спорт</a></li>
                     <li class="content-menu__item"><a class="content-menu__link" href="#">Бренды</a></li>
                 </ul>
-                <label class="header__search-wrapper d-flex">
+                <div class=" header__search-wrapper d-flex">
                     <svg class="search-icon">
                         <use xlink:href="images/all-svg.svg#search"></use>
                     </svg>
-                    <input type="search" class="custom__input header__search" placeholder="Что вы ищете?">
-                </label>
+                    <div class="custom-input header__search-wrapper">
+                        <input type="email" class="custom-input__input" id="search" placeholder=" " required>
+                        <label class="custom-input__placeholder" for="search">Что вы ищете</label>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="cart">
@@ -122,7 +125,7 @@
                             <img class="product-show__img" src="./images/product-card/1.jpg" alt="">
                         </div>
                         <div class="product-show__info d-flex">
-                            <div class="product-show__delete"></div>
+                            <button type="button" class="product-show__delete"></button>
                             <h3 class="product-show__title">Трикотажные брюки джоггеры</h3>
                             <div class="product-show__size-color d-flex">
                                 <div class="product-show__size">
@@ -150,7 +153,7 @@
                             <img class="product-show__img" src="./images/product-card/1.jpg" alt="">
                         </div>
                         <div class="product-show__info d-flex">
-                            <div class="product-show__delete"></div>
+                            <button type="button" class="product-show__delete"></button>
                             <h3 class="product-show__title">Трикотажные брюки джоггеры</h3>
                             <div class="product-show__size-color d-flex">
                                 <div class="product-show__size">

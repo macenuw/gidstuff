@@ -30,6 +30,10 @@
         background-image: url('../images/close.svg');
         background-repeat: no-repeat;
         background-position: center;
+        border: none;
+        background-color: white;
+        outline: transparent;
+        cursor: pointer;
     }
 
     &__title {

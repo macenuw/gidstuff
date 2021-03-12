@@ -152,7 +152,10 @@ $(function () {
     $('.product__feature .product__title-inner').on('click', function () {
         $('.product__feature').toggleClass('product__feature--active');
     });
-    $('.header-order__btn-phone').on('click', function () {
-        $('.header-order__list').toggleClass('header-order__list--active');
+   
+    $('.order__label--mod input').click(function(){
+        if ($(this).is('.checked')) {
+            $('.order__new-post-inner').addClass('order__new-post-inner--active');
+        }
     });
 });

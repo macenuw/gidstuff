@@ -12,7 +12,7 @@
     <header class="header">
         <ul class="header__run d-flex">
             <li class="header__run-item">
-                Оригинальные вещи из испанииasdasda
+                Оригинальные вещи из испании
             </li>
             <li class="header__run-item">
                 Доставка напрямую
@@ -97,12 +97,16 @@
                     <li class="content-menu__item"><a class="content-menu__link" href="#">Спорт</a></li>
                     <li class="content-menu__item"><a class="content-menu__link" href="#">Бренды</a></li>
                 </ul>
-                <label class="header__search-wrapper d-flex">
+
+                <div class=" header__search-wrapper d-flex">
                     <svg class="search-icon">
                         <use xlink:href="images/all-svg.svg#search"></use>
                     </svg>
-                    <input type="search" class="custom__input header__search" placeholder="Что вы ищете?">
-                </label>
+                    <div class="custom-input header__search-wrapper d-flex">
+                        <input type="email" class="custom-input__input" id="search" placeholder=" " required>
+                        <label class="custom-input__placeholder" for="search">Что вы ищете</label>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="cart">
@@ -122,7 +126,7 @@
                             <img class="product-show__img" src="./images/product-card/1.jpg" alt="">
                         </div>
                         <div class="product-show__info d-flex">
-                            <div class="product-show__delete"></div>
+                            <button type="button" class="product-show__delete"></button>
                             <h3 class="product-show__title">Трикотажные брюки джоггеры</h3>
                             <div class="product-show__size-color d-flex">
                                 <div class="product-show__size">
@@ -150,7 +154,7 @@
                             <img class="product-show__img" src="./images/product-card/1.jpg" alt="">
                         </div>
                         <div class="product-show__info d-flex">
-                            <div class="product-show__delete"></div>
+                            <button type="button" class="product-show__delete"></button>
                             <h3 class="product-show__title">Трикотажные брюки джоггеры</h3>
                             <div class="product-show__size-color d-flex">
                                 <div class="product-show__size">
@@ -293,7 +297,7 @@
         </section>
 
         <section class="offers container">
-            <h2 class="offers__title">Сезонные предложенияasdasdas</h2>
+            <h2 class="offers__title">Сезонные предложения</h2>
             <div class="offers__items">
                 <div class="product-card d-flex">
                     <div class="product-card__inner">
@@ -592,7 +596,7 @@
                         <span class="footer__text">
                             Чтобы быть в курсе всех акций и новинок, подпишитесь на нашу рассылку
                         </span>
-                        <input class="footer__subsribe-input" type="email" placeholder="Ваш email">
+                        <input class="footer__subsribe-input" type="email" placeholder="Ваш email" required>
                     </label>
                     <button class="footer__btn" type="submit">подписаться</button>
                 </form>
