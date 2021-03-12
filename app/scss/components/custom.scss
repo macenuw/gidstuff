@@ -6,10 +6,10 @@
             border-radius: 0;
             background: transparent;
             box-shadow: none;
-            font: 13px/32px Gilroy;
+            font: 16px/32px Gilroy;
             font-weight: 600;
-            font-size: 13px;
             max-width: 102px;
+
         }
 
         &__trigger {
@@ -22,23 +22,23 @@
         }
 
         &__dropdown {
-            top: 25px !important;
+            top: 33px !important;
             bottom: auto !important;
             background: white;
             font-size: 15px;
             letter-spacing: 0.4px;
             font-weight: 500;
-            border-radius: 8px;
+            border-radius: 0;
+            padding: 16px 24px;
 
             li {
-                text-transform: none;
                 font-weight: 500;
-                font-size: 12px;
+                font-size: 15px;
+                line-height: 100%;
                 letter-spacing: 0.4px;
                 color: #292B2C;
-                padding: 6px 0;
-                text-align: center;
-                border: 1px solid transparent;
+                padding: 8px 0;
+                border-bottom: 1px solid transparent;
 
                 &.selected {
                     border-bottom: 1px solid black;
@@ -54,18 +54,8 @@
             li.selected {
                 background-color: white;
                 color: black;
+                border-bottom: 1px solid black;
             }
         }
     }
-}
-
-.custom__input {
-    border: none;
-    width: 100%;
-    outline: transparent;
-
-    &::placeholder {
-        color: black;
-    }
-
 }

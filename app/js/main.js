@@ -1,5 +1,6 @@
 $(function () {
     $('.custom-select, .product-show__amount-control, .order-card__amount, .order__input').styler();
+    $(".order__form--tel").mask("+38 0(99) 999-9999");
 
     $('.slider').slick({
         dots: true,
@@ -151,7 +152,7 @@ $(function () {
     $('.product__feature .product__title-inner').on('click', function () {
         $('.product__feature').toggleClass('product__feature--active');
     });
-    // $('.order__delivery-new-post label').on('click', function () {
-    //     $('.order__delivery-new-post').toggleClass('order__delivery-new-post--active');
-    // });
+    $('.header-order__btn-phone').on('click', function () {
+        $('.header-order__list').toggleClass('header-order__list--active');
+    });
 });

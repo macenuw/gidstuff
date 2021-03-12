@@ -1,12 +1,61 @@
 .header-order {
     padding: 30px 15px;
     align-items: center;
+    border-bottom: 1px solid#CCCFD1;
 
-    .jq-selectbox__trigger {
-        right: -20px;
+    &__contacts {
+        position: relative;
+
+
+        &:hover {
+            .header-order__list {
+                transform: translateX(0);
+            }
+        }
     }
 
-    &__select {
-        margin-right: 20px;
+    &__btn {
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+
+        span {
+            margin-right: 8px;
+        }
+
+        @media(max-width: 768px) {
+            display: none;
+        }
     }
+
+    &__btn-phone {
+        background-color: transparent;
+        display: none;
+
+        @media(max-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__list {
+        background-color: white;
+        border: 1px solid black;
+        padding: 8px 15px;
+        position: absolute;
+        top: 20px;
+        right: 4px;
+        transform: translateY(-800px);
+        transition: 0.3s;
+        width: 140px;
+
+    }
+
+    &__item {
+        margin: 4px 0;
+    }
+
+    &__link {
+        color: black;
+    }
+
 }
